@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32721.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3ai.solutions.BlazorSubdirectoryFix", "3ai.solutions.BlazorSubdirectoryFix.csproj", "{FB348DF9-211C-49F2-9616-14390A91AE2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB348DF9-211C-49F2-9616-14390A91AE2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB348DF9-211C-49F2-9616-14390A91AE2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB348DF9-211C-49F2-9616-14390A91AE2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB348DF9-211C-49F2-9616-14390A91AE2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5C51AC6-254B-4B10-B8DA-334372ECC207}
+	EndGlobalSection
+EndGlobal
