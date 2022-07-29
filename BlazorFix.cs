@@ -8,14 +8,15 @@ namespace _3ai.solutions.BlazorSubdirectoryFix
         {
             app.Use(async (context, next) =>
             {
-                if (context.Request.Path.HasValue && context.Request.Path.Value.Contains("_content") && !context.Request.Path.Value.StartsWith("/_"))
+                if (context.Request.Path.HasValue && !context.Request.Path.Value.StartsWith("/_") &&
+                    (context.Request.Path.Value.Contains("_content") || context.Request.Path.Value.Contains("_blazor"))
+                   )
                 {
                     string url = context.Request.Path.Value;
                     url = url[url.IndexOf("_")..];
-                    context.Response.Redirect($"/{url}");
+                    context.Request.Path = $"/{url}";
                 }
-                else
-                    await next.Invoke();
+                await next.Invoke();
             });
             return app;
         }
